@@ -26,13 +26,8 @@ const initialState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case 'ADD':
-            console.log(action.payload)
-            console.log(action);
-            console.log(state);
-            // [...state.todoArray, action.payload]
             return { todoArray: [...state.todoArray, action.payload] }
     }
-    return ;
 }
 
 export {

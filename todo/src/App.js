@@ -17,7 +17,7 @@ function App() {
       <Form dispatch={dispatch}/>
       <List todos={state.todoArray} />
     </div>
-  );
+  )
 }
 
 export default App;
