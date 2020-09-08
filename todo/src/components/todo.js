@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
 export default function Todo(props) {
-    const { todo } = props
+    const { dispatch, todo } = props;
+
     return(
-        <li>
+        <li onClick={ () => dispatch({ type: 'TOGGLE_COMPLETE', payload: todo.id })}>
             {
                 todo.item
             }

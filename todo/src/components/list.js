@@ -3,12 +3,12 @@ import Todo from './todo';
 
 
 export default function List(props) {
-    const { todos } = props
+    const { dispatch, todos } = props
     return(
         <ul>
             {
-                todos.map( (item) => {
-                    return <Todo key={item.id} todo={item}/>
+                todos.map( (todo) => {
+                    return <Todo key={todo.id} dispatch={dispatch} todo={todo}/>
                 })
             }
         </ul>

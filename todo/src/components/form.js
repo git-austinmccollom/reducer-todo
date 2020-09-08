@@ -17,7 +17,7 @@ export default function Form(props) {
             type: 'ADD', 
             payload: {
             id: uuidv4(),
-            item: 'add!',
+            item: inputValue,
             completed: false
             }
         })

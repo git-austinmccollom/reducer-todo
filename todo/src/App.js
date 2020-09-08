@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Form dispatch={dispatch}/>
-      <List todos={state.todoArray} />
+      <List dispatch={dispatch} todos={state.todoArray} />
     </div>
   )
 }
