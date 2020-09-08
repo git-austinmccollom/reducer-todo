@@ -1,4 +1,6 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 
 export default function Form(props) {
 
@@ -10,7 +12,7 @@ export default function Form(props) {
         dispatch({ 
             type: 'ADD', 
             payload: {
-            id: new Date(),
+            id: uuidv4(),
             item: 'add!',
             completed: false
             }
