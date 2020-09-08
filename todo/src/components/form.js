@@ -36,6 +36,7 @@ export default function Form(props) {
                 </label>
                 <input type='submit' value='Add' ></input>
             </form>
+            <button onClick={ () => dispatch({ type: 'CLEAR' })}>clear complete</button>
         </div>
     )
 }
